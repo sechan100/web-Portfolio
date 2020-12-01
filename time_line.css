@@ -1,0 +1,15 @@
+body{
+    all: unset;
+    background-color: rgb(65, 65, 65);
+}
+
+/* 타임라인 */
+#time_line{
+    position: relative;
+    top: 360px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 5px;
+    background-color: rgb(235, 235, 235); 
+    z-index: -1;
+}
