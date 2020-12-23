@@ -1,0 +1,187 @@
+
+/* 연도 점  */
+.year_dot{
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 75%;
+}
+.inner_dot{
+    position: absolute;
+    top: 4.8px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 75%;
+}
+
+/* 2020년도 점 */
+#year_2020{
+    left: -32px;
+    border: 3px solid rgb(184, 218, 231, 0.8);
+}
+#year_2020_inner{
+    width: 10px;
+    height: 10px;
+    background-color: skyblue;
+}
+#year_2020_text{
+    position: absolute;
+    color: rgb(216, 216, 216);
+    font-size: 20px;
+    font-family: 'Wemakeprice-Bold';
+    top: 25px;
+    left: -31px;
+}
+
+/* 2021년도 점 */
+#year_2021{
+    right: -32px;
+    border: 3px solid rgba(218, 218, 141, 0.8);
+}
+#year_2021_inner{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(224, 224, 99)
+}
+#year_2021_text{
+    position: absolute;
+    color: rgb(216, 216, 216);
+    font-size: 20px;
+    font-family: 'Wemakeprice-Bold';
+    top: 25px;
+    right: -59px;
+}
+
+/* 모듈 점 */
+.module_dot{
+    position: absolute;
+    top: -2.4px;
+    background-color: rgb(235, 235, 235);
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 75%;
+}
+
+/* 육각형 클래스 */
+.hexagon {
+    position: relative;
+    margin: 1em auto;
+    width: 3.33em;
+    height: 5em;
+    border-radius: 1em/.5em;
+    background: rgb(206, 206, 206);
+    transition: opacity .5s;
+    z-index: -1;
+    transform: rotate(30deg);       /* 육각형 각도 */
+    transition: all 0.5s;
+}
+.hexagon:before {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+    -webkit-transform: rotate(60deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(60deg);  /* IE 9 */
+    transform: rotate(60deg); /* Firefox 16+, IE 10+, Opera */
+    z-index: -1;
+}
+
+.hexagon:after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+    -webkit-transform: rotate(-60deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(-60deg);  /* IE 9 */
+    transform: rotate(-60deg); /* Firefox 16+, IE 10+, Opera */
+    z-index: -1;
+}
+
+/* 아이콘 이미지 크기 */
+.module_icon{
+    position: absolute;
+    top: 12%;
+    left: -4.5%;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    transform: rotate(-30deg);        /* 아이콘 각도 회전 보정 */
+    transition: all 1s;
+}
+.icon_hover{
+    transform: rotate( -360deg );
+}
+
+#m_1_hexagon{
+    position: absolute;
+    top: -125px;
+    left: 20.35%;
+    margin-left: -50px;
+}
+.hexagon_hover_1{
+    transform: rotate( 360deg );
+    background: rgb(224, 94, 126);
+    margin: 0px 100px;
+}
+#module_1_dot{
+    left: 18%;
+    z-index: 2;
+}
+
+#m_2_hexagon{
+    position: absolute;
+    top: -125px;
+    left: 40%;
+    margin-left: -22px;
+}
+.hexagon_hover_2{
+    transform: rotate( 360deg );
+    background: rgb(111, 209, 255);
+    margin: 0px 100px;
+}
+#module_2_dot{
+    left: 40%;
+}
+
+#m_3_hexagon{
+    position: absolute;
+    top: -125px;
+    left: 60%;
+    margin-left: -22px;
+}
+.hexagon_hover_3{
+    transform: rotate( 360deg );
+    background: rgb(140, 255, 194);
+    margin: 0px 100px;
+}
+#module_3_dot{
+    left: 60%;
+}
+
+#m_4_hexagon{
+    position: absolute;
+    top: -125px;
+    left: 82%;
+    margin-left: -22px;
+}
+.hexagon_hover_4{
+    transform: rotate( 360deg );
+    background: rgb(213, 125, 235);
+    margin: 0px 100px;
+}
+#m_4_icon{
+    top: 18%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+}
+#module_4_dot{
+    left: 82%;
+}

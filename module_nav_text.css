@@ -1,0 +1,69 @@
+.module_text{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: 'Wemakeprice-Bold';
+}
+
+/* line class */
+.line{
+    position: relative;
+    top: 15px;
+    left: 16px;
+    width: 1.5px;
+    height: 30px;
+    margin-bottom: 30px;
+    background: rgba(194, 194, 194, 0.589);
+    opacity: 0;
+    transition: opacity 0.3s, height 0.5s;
+}
+.module_text .line_hover{
+    position: relative;
+    top: 15px;
+    left: 16px;
+    width: 1.5px;
+    height: 55px;
+    margin-bottom: 30px;
+    opacity: 1;
+    background:rgba(194, 194, 194, 0.589);
+}
+
+/* year class */
+.year{
+    color: rgba(255, 255, 255, 0.89);
+    font-family: 'Wemakeprice-Regular';
+    margin-top: -5px;
+    margin-bottom: -5px;
+    opacity: 0;
+    transition: opacity 0.5s, margin-bottom 0.3s, margin-top 0.3s;
+}
+.year_hover{
+    color: rgba(255, 255, 255, 0.89);
+    font-family: 'Wemakeprice-Regular';
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* information class */
+.info{
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.info_hover{
+    opacity: 1;
+}
+
+#m_1_text{
+    left: 17%;
+}
+#m_2_text{
+    left: 39%;
+}
+#m_3_text{
+    left: 59%;
+}
+#m_4_text{
+    left: 81%;
+}
